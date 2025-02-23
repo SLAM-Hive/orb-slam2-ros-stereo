@@ -34,8 +34,8 @@ ThDepth: $ThDepth
 # Stereo Rectification. Only if you need to pre-rectify the images.
 # Camera.fx, .fy, etc must be the same as in LEFT.P
 #--------------------------------------------------------------------------------------------
-LEFT.height: 480
-LEFT.width: 752
+LEFT.height: $Camera_height
+LEFT.width: $Camera_width
 LEFT.D: !!opencv-matrix
    rows: 1
    cols: 5
@@ -57,8 +57,8 @@ LEFT.P:  !!opencv-matrix
    dt: d
    data: $LEFT_P
 
-RIGHT.height: 480
-RIGHT.width: 752
+RIGHT.height: $Camera_height
+RIGHT.width: $Camera_width
 RIGHT.D: !!opencv-matrix
    rows: 1
    cols: 5

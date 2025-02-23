@@ -117,13 +117,22 @@ int main(int argc, char **argv)
 
     ros::spin();
 
-    // Stop all threads
-    SLAM.Shutdown();
+        // Stop all threads
+    
 
     // Save camera trajectory
+    SLAM.Shutdown();
+        
     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory_TUM_Format.txt");
     SLAM.SaveTrajectoryTUM("FrameTrajectory_TUM_Format.txt");
+SLAM.SaveMap("Map.pcd");
+    
     SLAM.SaveTrajectoryKITTI("FrameTrajectory_KITTI_Format.txt");
+
+    
+    
+
+
 
     ros::shutdown();
 

@@ -13,3 +13,6 @@ you can see:
 slam-hive-algorithm orb-slam2-ros-stereo [IMAGE ID] [CREATED] [SIZE]
 ```
 
+
+For source code, we just change the places where used to save trajectory and mapping result files.
+
